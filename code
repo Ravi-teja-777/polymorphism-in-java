@@ -1,0 +1,38 @@
+import java.util.*;
+import java.io.*;
+import java.lang.*;
+
+class Phone{
+    public void price(){
+        System.out.println("the price of the phone : 125000");
+    }
+}
+class Vivo extends Phone{
+    public void price(){
+        System.out.println("the price of the phone : 20000");
+    }
+}
+class Oneplus extends Phone{
+    public void price(){
+        System.out.println("the price of the phone : 25000");
+    }
+}
+class Iphone extends Phone{
+    public void price(){
+        System.out.println("185000");
+    }
+}
+
+
+public class Main{
+    public static void main(String args[]){
+        Phone obj1 = new Phone();
+        Phone obj2 = new Vivo();
+        Phone obj3 = new Oneplus();
+        Phone obj4 = new Iphone();
+        obj4.price();
+        obj2.price();
+        obj3.price();
+        obj1.price();
+    }
+}
